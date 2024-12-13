@@ -1,34 +1,32 @@
 import React from 'react'
 
-const ShoeCard = ({imgURL, changeBigShoeImage, bigShoeImage}) => {
+const ShoeCard = ({shoeURL, changeBigShoe, bigShoeImg}) => {
+
 
     const handleClick = () => {
-        if(bigShoeImage !== imgURL.bigShoe) {
-            changeBigShoeImage(imgURL.bigShoe)
+        if(bigShoeImg !== shoeURL.bigShoe) {
+            changeBigShoe(shoeURL.bigShoe)
         }
     }
 
 
+
   return (
-
-
     <div className={`border-2 rounded-xl
-    ${bigShoeImage === imgURL.bigShoe
+    ${bigShoeImg === shoeURL.bigShoe
     ? 'border-coral-red'
-    : 'border-transparent'}
-    cursor-pointer max-sm:flex-1 mx-4`}
-    onClick={() => handleClick()}>
+    : 'border-transparent'} 
+    cursor-pointer`}
+    onClick={handleClick}>
+        <div className='flex bg-card bg-cover bg-center rounded-xl object-contain p-4
+        w-40 h-40'>
 
-        <div className='flex justify-center items-center
-        bg-card bg-center bg-cover
-        sm:w-40 sm:h-40 rounded-xl max-sm:p-4'>
-            <img src={imgURL.thumbnail}
-            alt='shoe collection'
-            width={127}
-            height={103}
+            <img src={shoeURL.thumbnail} alt='shoe collection'
             className='object-contain'></img>
+
         </div>
     </div>
+
   )
 }
 

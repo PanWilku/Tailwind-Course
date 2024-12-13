@@ -2,8 +2,8 @@ import Button from '../components/Button'
 import { arrowRight } from '../assets/icons'
 import { shoes, statistics } from '../assets/constants'
 import { bigShoe1, bigShoe2, bigShoe3 } from '../assets/images'
-import ShoeCard from '../components/ShoeCard'
 import { useState } from 'react'
+import ShoeCard from '../components/ShoeCard'
 
 
 
@@ -18,7 +18,7 @@ const Hero = () => {
     className='w-full
     flex flex-col xl:flex-row
     min-h-screen xl:justify-center
-    gap-10 max-container border-2 border-red-400'>
+    max-container'>
 
       {/* w-full sets the width of the div to 100% by default, unless overridden (e.g., by xl:w-2/5). */}
       <div className='relative xl:w-2/5 flex 
@@ -45,22 +45,29 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='relative flex-1 flex flex-col justify-center items-center
-      xl:min-h-full bg-primary bg-hero bg-cover bg-center'>
-        <img src={bigShoeImg} alt='show collection' width={610} height={500} className='
-        object-contain relative z-10 pt-20'></img>
+      <div className='flex flex-1 flex-col justify-center
+      items-center xl:min-h-full
+      bg-primary bg-hero bg-cover bg-center '>
+            <img src={bigShoeImg} width={610} className=' object-contain relative z-10 pt-20 mb-10'></img>
 
-        <div className='flex sm:gap-6 gap-4 pt-4'>
+        <div className='flex gap-10 max-sm:flex-wrap max-sm:justify-center'>
           {shoes.map((shoe) => (
-            <div key={shoe}>
-              <ShoeCard
-              imgURL={shoe}
-              changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
-              bigShoeImage={bigShoeImg}>
-              </ShoeCard>
+            
+            <div key={shoe.id}>
+            <ShoeCard
+            shoeURL={shoe}
+            changeBigShoe={(shoe) => setBigShoeImg(shoe)}
+            bigShoeImg={bigShoeImg}
+            >
+            </ShoeCard>
             </div>
           ))}
         </div>
+
+          
+
+
+
       </div>
 
     </section>
