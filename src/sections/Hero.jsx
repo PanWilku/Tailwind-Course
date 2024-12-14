@@ -19,7 +19,7 @@ const Hero = () => {
     max-container'>
 
       {/* w-full sets the width of the div to 100% by default, unless overridden (e.g., by xl:w-2/5). */}
-      <div className='lg:w-2/5 flex 
+      <div className='lg:w-1/2 flex 
       flex-col items-start max-xl:padding-x
       justify-start pt-64 border-2 border-red-400'>
         <p className='text-2xl text-orange-400 pb-8 pt-10'>Our Summer collections</p>
