@@ -21,7 +21,7 @@ const Hero = () => {
       {/* w-full sets the width of the div to 100% by default, unless overridden (e.g., by xl:w-2/5). */}
       <div className='lg:w-1/2 flex 
       flex-col items-start max-xl:padding-x
-      justify-start pt-64 border-2 border-red-400'>
+      justify-start pt-64'>
         <p className='text-2xl text-orange-400 pb-8 pt-10'>Our Summer collections</p>
         <h1 className='text-8xl font-bold pb-4
         xl:whitespace-nowrap bg-white relative z-10 pr-10'><span className=''>The New Arrival</span>
@@ -45,8 +45,8 @@ const Hero = () => {
 
       
       <div className='flex w-full flex-col max-lg:pt-20
-      gap-10 items-center justify-center border-2
-    bg-hero bg-cover bg-center border-green-400 pb-4'>
+      gap-10 items-center justify-center
+    bg-hero bg-cover bg-center  pb-4'>
           <img src={bigShoe} className='h-fit z-10'></img>
 
           <div className='flex gap-10 mx-2'>

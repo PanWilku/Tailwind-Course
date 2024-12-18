@@ -10,10 +10,10 @@ const Button = (props) => {
     leading-none  bg-coral-red rounded-full
     border-coral-red'>
         {props.label}
-        <img 
+        {props.iconURL && <img 
         src={props.iconURL}
         alt='arrow right icon'
-        className='ml-2 rouunded-full w-5 h-5'/>
+        className='ml-2 rouunded-full w-5 h-5'/>}
     </button>
   )
 }
