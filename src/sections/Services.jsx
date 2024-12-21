@@ -6,7 +6,7 @@ import ServicesCard from '../components/ServicesCard';
 const Services = () => {
   return (
     <section>
-      <div className='flex md:gap-32 max-md:gap-10
+      <div className='flex lg:gap-32 max-lg:gap-10
       max-lg:flex-col justify-around max-lg:items-center max-lg:min-w-[300px]'>
         {services.map((service) => (
           <ServicesCard
