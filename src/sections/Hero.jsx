@@ -16,7 +16,7 @@ const Hero = () => {
     className='w-full
     flex flex-col lg:flex-row
     min-h-screen lg:justify-center
-    max-container'>
+    max-container min-w-[300px]'>
 
       {/* w-full sets the width of the div to 100% by default, unless overridden (e.g., by xl:w-2/5). */}
       <div className='lg:w-1/2 flex 

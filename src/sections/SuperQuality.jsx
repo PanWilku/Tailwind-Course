@@ -5,7 +5,7 @@ import { shoe8 } from '../assets/images'
 const SuperQuality = () => {
   return (
   <section>
-    <div className='flex flex-row max-lg:flex-col justify-center items-center'>
+    <div className='flex flex-row max-lg:flex-col justify-center items-center min-w-[300px]'>
 
         <div className='lg:w-1/2 flex 
       flex-col items-start max-xl:padding-x
