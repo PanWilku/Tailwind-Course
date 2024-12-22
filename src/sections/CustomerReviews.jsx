@@ -7,7 +7,7 @@ const CustomerReviews = () => {
     
     <section>
 
-      <div className='flex justify-center'>
+      <div className='flex justify-center overflow-hidden  w-full'>
         <div className='flex flex-col w-1/2 min-w-[300px] text-center break-words'>
           <h1 className='text-4xl font-bold pb-8'>What Our <span className='text-coral-red'>Customers</span> Say?</h1>
           <p className="text-slate-gray opacity-80 font-montserrat">Hear genuine stories from our satisfied customers about their exceptional experiences with us.</p>

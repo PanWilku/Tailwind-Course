@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <button className={`flex justify-center
     items-center
-    gap-2 px-7 py-4 shrink-0
+    gap-2 px-7 py-4
     font-montserrat text-lg border
     leading-none
     ${props.backgroundColor

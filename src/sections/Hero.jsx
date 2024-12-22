@@ -16,7 +16,7 @@ const Hero = () => {
     className='w-full
     flex flex-col lg:flex-row
     min-h-screen lg:justify-center
-    max-container min-w-[300px]'>
+    max-container min-w-[300px] overflow-hidden'>
 
       {/* w-full sets the width of the div to 100% by default, unless overridden (e.g., by xl:w-2/5). */}
       <div className='lg:w-1/2 flex 
@@ -29,7 +29,7 @@ const Hero = () => {
         <span className='text-8xl text-orange-600'>Nike</span> Shoes
         </h1>
         <p className='text-slate-gray opacity-80 leading-8 max-w-xs pb-8'>Discover stylish Nike arrivals, quality comfort, add innovation for your active life.</p>
-        <div className='flex gap-12'>
+        <div className='flex flex-wrap sm:gap-12 gap-4'>
           <Button label="Shop now"
           iconURL={arrowRight}>
           </Button>

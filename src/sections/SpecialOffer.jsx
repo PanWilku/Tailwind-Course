@@ -6,14 +6,14 @@ import { arrowRight } from '../assets/icons'
 
 const SpecialOffer = () => {
   return (
-    <section className='flex max-lg:flex-col items-center justify-center gap-10 max-container min-w-[300px]'>
+    <section className='flex max-lg:flex-col items-center justify-center gap-10 w-full m-4 min-w-[300px]'>
 
       <div className='flex-1 justify-center max-lg:order-3'>
         <img src={offer} width={773} height={687} className='object-contain w-full'></img>
       </div>
 
       
-      <div className='lg:w-1/2 flex flex-col'>
+      <div className='lg:w-1/2 flex flex-col w-full'>
         <div className='flex
         flex-col items-start
         justify-start max-lg:order-1'>
@@ -26,7 +26,7 @@ const SpecialOffer = () => {
           Navigate a realm of possibilities designed to fulfill your unique desires,
            surpassing the loftiest expectations. Your journey with us is nothing short of exceptional</p>
         </div >
-        <div className='flex gap-12 mt-11 max-lg:pb-10 whitespace-nowrap max-xl:order-2 max-lg:justify-center'>
+        <div className='flex max-sm:gap-1 gap-12 mt-11 max-lg:pb-10 max-xl:order-2 max-lg:justify-center'>
         <Button label="Shop Now"
         iconURL={arrowRight}></Button>
         <Button label="Learn More"

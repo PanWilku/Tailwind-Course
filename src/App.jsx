@@ -34,7 +34,7 @@ function App() {
         <SpecialOffer />
       </section>
       <section
-      className=" bg-pale-blue">
+      className="bg-pale-blue padding">
         <CustomerReviews />
       </section>
       <section
