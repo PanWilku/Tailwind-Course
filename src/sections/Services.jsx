@@ -9,7 +9,7 @@ const Services = () => {
       <div className='flex lg:gap-32 max-lg:gap-10
       max-lg:flex-col justify-around max-lg:items-center max-lg:min-w-[300px]'>
         {services.map((service) => (
-          <ServicesCard
+          <ServicesCard key={service.label}
           label={service.label}
           imgURL={service.imgURL}
           subtext={service.subtext}>

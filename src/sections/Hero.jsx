@@ -57,7 +57,7 @@ const Hero = () => {
 
           <div className='flex gap-10 mx-2'>
             {shoes.map((shoe) => (
-              <ShoeCard key={shoe}
+              <ShoeCard key={shoe.id}
               shoeImg={shoe}
               actualBigShoe={bigShoe}
               changeBigShoe={(shoe) => setBigShoe(shoe)}>

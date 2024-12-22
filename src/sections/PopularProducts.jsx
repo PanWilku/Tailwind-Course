@@ -12,7 +12,7 @@ const PopularProducts = () => {
 
       <div className='flex flex-row gap-12 flex-wrap justify-center items-center'>
         {products.map((item) => (
-          <ShoeProduct
+          <ShoeProduct key={item.name}
           shoe={item}
           >
           </ShoeProduct>

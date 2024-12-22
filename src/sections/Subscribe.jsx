@@ -2,7 +2,13 @@ import React from 'react'
 
 const Subscribe = () => {
   return (
-    <div>Subscribe</div>
+    <section>
+      
+      <div className='flex justify-center'>
+        <h1 className='text-4xl font-bold'> Sign Up for <span className=''>Updates</span> & Newsletter</h1>
+      </div>
+
+    </section>
   )
 }
 
